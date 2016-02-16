@@ -11341,6 +11341,8 @@ SOT-23 Lithium Polymer charging IC. Schematic element and footprint proven. Spar
 <part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="GND34" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C15" library="rcl" deviceset="C-EU" device="C0603" value="10uf"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11446,6 +11448,8 @@ SOT-23 Lithium Polymer charging IC. Schematic element and footprint proven. Spar
 <instance part="C16" gate="G$1" x="-149.86" y="20.32"/>
 <instance part="GND34" gate="1" x="-149.86" y="10.16"/>
 <instance part="C15" gate="G$1" x="-30.48" y="157.48"/>
+<instance part="C7" gate="G$1" x="-165.1" y="71.12"/>
+<instance part="GND9" gate="1" x="-165.1" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -11621,8 +11625,6 @@ SOT-23 Lithium Polymer charging IC. Schematic element and footprint proven. Spar
 <wire x1="-198.12" y1="60.96" x2="-210.82" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 <wire x1="-210.82" y1="60.96" x2="-210.82" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-210.82" y1="66.04" x2="-210.82" y2="60.96" width="0.1524" layer="91"/>
-<junction x="-210.82" y="60.96"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -11677,6 +11679,11 @@ SOT-23 Lithium Polymer charging IC. Schematic element and footprint proven. Spar
 </segment>
 <segment>
 <wire x1="-111.76" y1="20.32" x2="-111.76" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="-165.1" y1="66.04" x2="-165.1" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -12180,7 +12187,8 @@ SOT-23 Lithium Polymer charging IC. Schematic element and footprint proven. Spar
 <pinref part="U5" gate="G$1" pin="VCC"/>
 <wire x1="-142.24" y1="76.2" x2="-160.02" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="L2" gate="G$1" pin="1"/>
-<wire x1="-160.02" y1="76.2" x2="-170.18" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="76.2" x2="-165.1" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-165.1" y1="76.2" x2="-170.18" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-137.16" y1="96.52" x2="-160.02" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-160.02" y1="96.52" x2="-160.02" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="1"/>
@@ -12207,6 +12215,8 @@ SOT-23 Lithium Polymer charging IC. Schematic element and footprint proven. Spar
 <wire x1="-195.58" y1="55.88" x2="-195.58" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-149.86" y1="22.86" x2="-149.86" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-149.86" y="25.4"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="-165.1" y1="76.2" x2="-165.1" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12V" class="0">
